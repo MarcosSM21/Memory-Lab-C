@@ -7,3 +7,10 @@ Build a small educational lab in C to explore how memory works in real programs.
 
 ## Status
 Phase 0 started: environment setup, first compilation, first executable.
+
+## Build
+
+Compile all programs:
+
+```bash```
+make
