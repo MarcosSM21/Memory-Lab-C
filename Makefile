@@ -1,21 +1,21 @@
-CC = gcc 
+CC = gcc
 CFLAGS = -Wall -Wextra -Wpedantic
 
-all : hello warnings size storage stack_demo pass_value pass_reference
+all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics
 
-hello :
-	mkdir -p bin 
+hello:
+	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase0/hello_memory.c -o bin/hello_memory
 
-warnings :
+warnings:
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase0/warnings_demo.c -o bin/warnings_demo
 
-size :
+sizes:
 	mkdir -p bin
-	$(CC) $(CFLAGS) src/phase0/size_and_addresses.c -o bin/size_and_addresses
+	$(CC) $(CFLAGS) src/phase0/sizes_and_addresses.c -o bin/sizes_and_addresses
 
-storage :
+storage:
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase0/storage_classes_demo.c -o bin/storage_classes_demo
 
@@ -31,6 +31,9 @@ pass_reference:
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase1/pass_by_reference_demo.c -o bin/pass_by_reference_demo
 
-clean: 
-	rm -rf bin
+pointer_basics:
+	mkdir -p bin
+	$(CC) $(CFLAGS) src/phase1/pointer_basics_demo.c -o bin/pointer_basics_demo
 
+clean:
+	rm -rf bin/*

@@ -22,3 +22,12 @@
     - `&x` gives and address
     - `*p` accesses the value at that address
 
+## Step 4
+- Created a pointer variable directly in `main`.
+- Learned to distinguish:
+  - `x`        -> the original variable
+  - `&x`       -> the address of `x`
+  - `p`        -> a pointer storing `&x`
+  - `&p`       -> the address of the pointer itself
+  - `*p`       -> the value stored at the address in `p`
+- Confirmed that writing through `*p` modifies the original variable.
