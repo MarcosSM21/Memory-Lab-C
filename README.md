@@ -20,4 +20,4 @@ make
 - `hello_memory`: first executable
 - `warnings_demo`: disciplined compilation with warnings
 - `sizes_addresses`: first inspection of variable sizes and memory addresses
-
+- `storage_classes_demo`: compares local, global and static variables, and shows how lifetime affects behavior

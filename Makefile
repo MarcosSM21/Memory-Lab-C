@@ -1,7 +1,7 @@
 CC = gcc 
 CFLAGS = -Wall -Wextra -Wpedantic
 
-all : hello warnings size
+all : hello warnings size storage
 
 hello :
 	mkdir -p bin 
@@ -14,6 +14,10 @@ warnings :
 size :
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase0/size_and_addresses.c -o bin/size_and_addresses
+
+storage :
+	mkdir -p bin
+	$(CC) $(CFLAGS) src/phase0/storage_classes_demo.c -o bin/storage_classes_demo
 
 clean: 
 	rm -rf bin

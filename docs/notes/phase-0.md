@@ -28,3 +28,10 @@
 - Used `&` to obtain memory addresses.
 - Learned that a variable is not just a name and a value: it also has a concrete location in memory.
 
+## Step 5
+- Compared local, global, and static local variables
+- Learned that local variables are recreated on each function
+- Learned that static local variables preserve their value between calls
+- Learned that global variables also persist dor the whole program execution
+- First strong intuition that program memory is organized into different conceptual regions.
+
