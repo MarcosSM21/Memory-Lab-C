@@ -26,3 +26,4 @@ make
 - `pass_by_reference_demo`: uses a pointer to modify the original variable through its memory address
 - `null_pointer_demo`: introduces `NULL` and the basic rule that invalid pointers must not be dereferenced
 - `array_contiguity_demo`: shows that array elements are stored contiguously in memory
+- `array_pointer_relation_demo`: compares an array name, the address of its first element, and a pointer to show their relation and differences
