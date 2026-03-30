@@ -31,3 +31,4 @@ make
 - `pointer_walk_demo`: walks through an array using a pointer and shows the current address and value at each step
 - `pointer_write_demo`: traverses an array with a pointer and modifies each element through direct memory writes
 - `out_of_bounds_demo`: introduces array bounds checking and explains why out-of-range access is invalid
+- `out_of_bounds_asan_demo`: intentionally triggers an out-of-bounds access and shows how AddressSanitizer reports it
