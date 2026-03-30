@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Wpedantic
 
-all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics null_demo
+all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics null_demo array_contiguity
 
 hello:
 	mkdir -p bin
@@ -38,6 +38,10 @@ pointer_basics:
 null_demo:
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase1/null_pointer_demo.c -o bin/null_pointer_demo
+
+array_contiguity:
+	mkdir -p bin
+	$(CC) $(CFLAGS) src/phase2/array_contiguity_demo.c -o bin/array_contiguity_demo
 
 clean:
 	rm -rf bin/*
