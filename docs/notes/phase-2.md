@@ -33,3 +33,9 @@
     moving the pointer
     modifying the pointed value
 - Saw the array before and after pointer-based writes.
+
+## Step 6
+- Introduced the idea of out-of-bounds access in arrays.
+- Reinforced that a size-5 array only has valid indices from 0 to 4.
+- Learned that accessing that range is invalid and leads to undefined behavior.
+- Practiced the safe pattern: check bounds before accessing.
