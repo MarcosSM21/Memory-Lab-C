@@ -21,3 +21,4 @@ make
 - `warnings_demo`: disciplined compilation with warnings
 - `sizes_addresses`: first inspection of variable sizes and memory addresses
 - `storage_classes_demo`: compares local, global and static variables, and shows how lifetime affects behavior
+- `stack_frame_demo`: shows how function calls create separate local contexts in memory

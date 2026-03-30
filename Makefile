@@ -1,7 +1,7 @@
 CC = gcc 
 CFLAGS = -Wall -Wextra -Wpedantic
 
-all : hello warnings size storage
+all : hello warnings size storage stack_demo
 
 hello :
 	mkdir -p bin 
@@ -18,6 +18,10 @@ size :
 storage :
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase0/storage_classes_demo.c -o bin/storage_classes_demo
+
+stack_demo:
+	mkdir -p bin
+	$(CC) $(CFLAGS) src/phase1/stack_frame_demo.c -o bin/stack_frame_demo
 
 clean: 
 	rm -rf bin
