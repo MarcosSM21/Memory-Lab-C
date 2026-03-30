@@ -1,7 +1,7 @@
 CC = gcc 
 CFLAGS = -Wall -Wextra -Wpedantic
 
-all : hello warnings size storage stack_demo pass_value
+all : hello warnings size storage stack_demo pass_value pass_reference
 
 hello :
 	mkdir -p bin 
@@ -26,6 +26,10 @@ stack_demo:
 pass_value:
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase1/pass_by_value_demo.c -o bin/pass_by_value_demo
+
+pass_reference:
+	mkdir -p bin
+	$(CC) $(CFLAGS) src/phase1/pass_by_reference_demo.c -o bin/pass_by_reference_demo
 
 clean: 
 	rm -rf bin
