@@ -29,3 +29,4 @@ make
 - `array_pointer_relation_demo`: compares an array name, the address of its first element, and a pointer to show their relation and differences
 - `pointer_arithmetic_demo`: shows the connection between array indexing and pointer arithmetic
 - `pointer_walk_demo`: walks through an array using a pointer and shows the current address and value at each step
+- `pointer_write_demo`: traverses an array with a pointer and modifies each element through direct memory writes

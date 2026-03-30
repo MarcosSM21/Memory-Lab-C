@@ -25,3 +25,11 @@
 - Observed that p changes address while p reads the value at the current position
 - Reinforced that pointer arithmetic move through contiguos memory by elements, not by raw bytes
 - Distinguished between moving the pointer (p++) and modifying the the pointed value ((*p)++)
+
+## Step 5
+- Modified an array by writing through a pointer while transversing it.
+- Confirmed that *p = ..., changes the actual array element in memory.
+- Reinforced the distinction between:
+    moving the pointer
+    modifying the pointed value
+- Saw the array before and after pointer-based writes.
