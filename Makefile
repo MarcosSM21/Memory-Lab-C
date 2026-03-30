@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Wpedantic
 
-all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics
+all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics null_demo
 
 hello:
 	mkdir -p bin
@@ -34,6 +34,10 @@ pass_reference:
 pointer_basics:
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase1/pointer_basics_demo.c -o bin/pointer_basics_demo
+
+null_demo:
+	mkdir -p bin
+	$(CC) $(CFLAGS) src/phase1/null_pointer_demo.c -o bin/null_pointer_demo
 
 clean:
 	rm -rf bin/*

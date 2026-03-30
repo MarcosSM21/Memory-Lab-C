@@ -24,3 +24,4 @@ make
 - `stack_frame_demo`: shows how function calls create separate local contexts in memory
 - `pass_by_value_demo`: proves that modifying a function parameter does not change the original variable
 - `pass_by_reference_demo`: uses a pointer to modify the original variable through its memory address
+- `null_pointer_demo`: introduces `NULL` and the basic rule that invalid pointers must not be dereferenced

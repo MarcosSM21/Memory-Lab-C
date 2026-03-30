@@ -31,3 +31,11 @@
   - `&p`       -> the address of the pointer itself
   - `*p`       -> the value stored at the address in `p`
 - Confirmed that writing through `*p` modifies the original variable.
+
+## Step 5
+- Introduces `NULL` as a safe explicit state for a pointer that does not point to a valid object.
+- Learned that a null pointer must not be deferenced
+- Practiced the basic safety patters:
+    check first, dereference later.
+- Distinguished `NULL` from an uninitialized variable.
+
