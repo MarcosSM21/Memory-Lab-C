@@ -14,3 +14,10 @@ Compile all programs:
 
 ```bash```
 make
+
+## Current experiments
+
+- `hello_memory`: first executable
+- `warnings_demo`: disciplined compilation with warnings
+- `sizes_addresses`: first inspection of variable sizes and memory addresses
+
