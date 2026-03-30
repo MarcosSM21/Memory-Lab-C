@@ -22,3 +22,4 @@ make
 - `sizes_addresses`: first inspection of variable sizes and memory addresses
 - `storage_classes_demo`: compares local, global and static variables, and shows how lifetime affects behavior
 - `stack_frame_demo`: shows how function calls create separate local contexts in memory
+- `pass_by_value_demo`: proves that modifying a function parameter does not change the original variable
