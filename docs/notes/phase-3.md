@@ -34,3 +34,24 @@
 - Reinforced the design rule:
    every dynamic allocation should have a clear free plan.
 
+## Step 5
+- Introduced use-after-free as reading or writing memory after is has been freed.
+- Learned that after free, the pointer variable may still exist, but the pointed block is no longer valid.
+- Observed an intentional heap-use-after-free with AddressSanitizer.
+- Reinforced the safety practice:
+   free the block, then set the pointer to NULL if it may be reused.
+
+## Step 6
+- Introduced double free as calling free twice on the same allocated block
+- Learned that the first free is valid, but the second one is error.
+- Observed a double-free report with AddressSanitier.
+- Learned the defensive pattern:
+   free the block, then set the pointer to NULL
+- Noted that free(NULL) is safe and does nothing.
+
+## Step 7
+- Introduced realloc as a way to resize a dynamically allocated block.
+- Learned that the block may stay in place or move to a new address.
+- Observed that existing data is preserved on successful reallocation.
+- Reinforced the safer pattern of assigning realloc to a temporary pointer first
+- Noted that newly added memory must be initialized before reading

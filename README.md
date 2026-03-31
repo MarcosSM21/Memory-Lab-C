@@ -38,3 +38,4 @@ make
 - `memory_leak_demo`: intentionally omits `free` to illustrate what a memory leak is and how sanitizers can report it
 - `use_after_free_demo`: intentionally triggers a heap-use-after-free and shows how AddressSanitizer reports it
 - `double_free_demo`: intentionally triggers a double free and shows how AddressSanitizer reports it
+- `realloc_demo`: resizes a dynamic array with `realloc` and shows that the block may keep or change its address
