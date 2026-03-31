@@ -39,3 +39,10 @@
 - Reinforced that a size-5 array only has valid indices from 0 to 4.
 - Learned that accessing that range is invalid and leads to undefined behavior.
 - Practiced the safe pattern: check bounds before accessing.
+
+## Step 7
+- First practical use of AddressSanitizer.
+- Compiled a program with -fsanitize=address -g
+- Triggered an intentional out-of-bounds read for educational purposes.
+- Observed that ASan reports the memory clearly at runtime.
+- Learned that tools like ASan do not fix bugs, but make memory bugs visible and easier to locate.

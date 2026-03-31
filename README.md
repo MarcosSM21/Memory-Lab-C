@@ -32,3 +32,4 @@ make
 - `pointer_write_demo`: traverses an array with a pointer and modifies each element through direct memory writes
 - `out_of_bounds_demo`: introduces array bounds checking and explains why out-of-range access is invalid
 - `out_of_bounds_asan_demo`: intentionally triggers an out-of-bounds access and shows how AddressSanitizer reports it
+- `malloc_intro_demo`: introduces dynamic allocation with `malloc` and the basic allocate-check-use-free pattern

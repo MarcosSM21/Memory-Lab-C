@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Wpedantic
 ASAN_FLAGS = -fsanitize=address -g
 
-all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics null_demo array_contiguity array_pointer_relation pointer_arithmetic pointer_walk pointer_write out_of_bounds out_of_bounds_asan
+all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics null_demo array_contiguity array_pointer_relation pointer_arithmetic pointer_walk pointer_write out_of_bounds out_of_bounds_asan malloc_intro
 
 hello:
 	mkdir -p bin
@@ -67,6 +67,10 @@ out_of_bounds:
 out_of_bounds_asan:
 	mkdir -p bin
 	$(CC) $(CFLAGS) $(ASAN_FLAGS) src/phase2/out_of_bounds_asan_demo.c -o bin/out_of_bounds_asan_demo
+
+malloc_intro:
+	mkdir -p bin
+	$(CC) $(CFLAGS) src/phase3/malloc_intro_demo.c -o bin/malloc_intro_demo
 
 clean:
 	rm -rf bin/*
