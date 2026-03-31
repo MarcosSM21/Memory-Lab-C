@@ -33,3 +33,5 @@ make
 - `out_of_bounds_demo`: introduces array bounds checking and explains why out-of-range access is invalid
 - `out_of_bounds_asan_demo`: intentionally triggers an out-of-bounds access and shows how AddressSanitizer reports it
 - `malloc_intro_demo`: introduces dynamic allocation with `malloc` and the basic allocate-check-use-free pattern
+- `stack_vs_heap_demo`: compares local stack objects with a dynamically allocated heap block and distinguishes a pointer from the memory it points to
+- `malloc_vs_calloc_demo`: compares raw dynamic allocation with `malloc` against zero-initialized allocation with `calloc`
