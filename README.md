@@ -37,3 +37,4 @@ make
 - `malloc_vs_calloc_demo`: compares raw dynamic allocation with `malloc` against zero-initialized allocation with `calloc`
 - `memory_leak_demo`: intentionally omits `free` to illustrate what a memory leak is and how sanitizers can report it
 - `use_after_free_demo`: intentionally triggers a heap-use-after-free and shows how AddressSanitizer reports it
+- `double_free_demo`: intentionally triggers a double free and shows how AddressSanitizer reports it
