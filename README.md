@@ -36,3 +36,4 @@ make
 - `stack_vs_heap_demo`: compares local stack objects with a dynamically allocated heap block and distinguishes a pointer from the memory it points to
 - `malloc_vs_calloc_demo`: compares raw dynamic allocation with `malloc` against zero-initialized allocation with `calloc`
 - `memory_leak_demo`: intentionally omits `free` to illustrate what a memory leak is and how sanitizers can report it
+- `use_after_free_demo`: intentionally triggers a heap-use-after-free and shows how AddressSanitizer reports it
