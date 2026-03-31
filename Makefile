@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Wpedantic
 ASAN_FLAGS = -fsanitize=address -g
 
-all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics null_demo array_contiguity array_pointer_relation pointer_arithmetic pointer_walk pointer_write out_of_bounds out_of_bounds_asan malloc_intro stack_vs_heap malloc_vs_calloc
+all: hello warnings sizes storage stack_demo pass_value pass_reference pointer_basics null_demo array_contiguity array_pointer_relation pointer_arithmetic pointer_walk pointer_write out_of_bounds out_of_bounds_asan malloc_intro stack_vs_heap malloc_vs_calloc memory_leak
 
 hello:
 	mkdir -p bin
@@ -79,6 +79,10 @@ stack_vs_heap:
 malloc_vs_calloc:
 	mkdir -p bin
 	$(CC) $(CFLAGS) src/phase3/malloc_vs_calloc_demo.c -o bin/malloc_vs_calloc_demo
+
+memory_leak:
+	mkdir -p bin
+	$(CC) $(CFLAGS) $(ASAN_FLAGS) src/phase3/memory_leak_demo.c -o bin/memory_leak_demo
 
 clean:
 	rm -rf bin/*
